@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src="seamonster_walkthrough.gif" width="600" alt="Video Walkthrough" />
+<img src="assets/seamonster_walkthrough.gif" width="600" alt="Video Walkthrough" />
 
 GIF created with **ScreenToGif** on Windows
 
