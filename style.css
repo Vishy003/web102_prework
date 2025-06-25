@@ -5,10 +5,12 @@ body {
     background-color: #758190;
 }
 
+/* Tentacles logo */
 #tentacles {
     width: 50px;
 }
 
+/* Header bar */
 .header {
     display: flex;
     background-color: lightblue;
@@ -19,10 +21,19 @@ body {
     margin-top: -10px;
 }
 
+/* Flexbox applied to stats-container */
 .stats-container {
     display: flex;
+    align-items: center; /* aligns items vertically */
 }
 
+/* Hover effect for stats-container */
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+/* Individual stats cards */
 .stats-card {
     background-color: #a8b0bc;
     border-radius: 7px;
@@ -32,40 +43,55 @@ body {
     text-align: center;
 }
 
-#num-contributions, #total-raised, #num-games {
+#num-contributions,
+#total-raised,
+#num-games {
     font-size: 50px;
 }
 
 #games-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    justify-content: center;        /* Center cards in each row */
+    gap: 35px 25px;                 /* Slightly more space: 35px row, 25px column */
+    padding: 20px 15px;
 }
 
 .game-card {
     background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
-    text-align: center;
     border-radius: 7px;
+    padding: 15px;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
 }
 
+
+
+
+/* Game card hover */
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: translateY(-5px);
 }
 
+/* Game image styling */
+.game-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+/* Button container for filters */
 #button-container {
     text-align: center;
 }
 
+/* Button styling */
 button {
     font-family: 'Cabin';
     border: none;
@@ -73,3 +99,5 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+
